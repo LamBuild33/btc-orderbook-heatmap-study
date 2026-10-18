@@ -1,0 +1,4 @@
+date,year,side,band_width,pull_utc,distance,pulled_band,matched_band,pulled_reached,matched_reached,pulled_through,matched_through
+2021-05-01,2021,sell,150,2021-05-01 11:39:00,1983.71,59700.0,59550,False,0.0,False,0.0
+2022-01-01,2022,buy,100,2022-01-01 15:16:00,1546.06,45300.0,45200/45400,False,0.0,False,0.0
+2023-09-01,2023,buy,50,2023-09-01 15:06:00,675.92,24950.0,24900,False,0.0,False,0.0

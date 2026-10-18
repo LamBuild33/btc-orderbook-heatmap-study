@@ -1,0 +1,6 @@
+﻿heatmap_data/
+heatmap_data_tardis/
+tardis_raw/
+heatmap.html
+*.part
+__pycache__/
