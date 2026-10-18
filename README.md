@@ -4,8 +4,8 @@ Do order book "walls" (the bright bands on liquidity heatmaps like CoinGlass)
 mark where Bitcoin price turns? Tested with pre-registered rules on 91 free
 Tardis.dev days of Coinbase BTC-USD full order book data.
 
-**Short answer: no.** Colored bands bounced less than ordinary levels, and
-price did not turn just ahead of them either. See FINDINGS.md.
+**Short answer (intraday, 6-hour horizon): no.** Colored bands bounced less than ordinary levels, and
+price did not turn just ahead of them either. The 12-24 hour swing horizon is still untested; see FINDINGS.md.
 
 ## Files
 - PREREG.md: every test's rules, written before running (Amendments 1-5)

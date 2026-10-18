@@ -26,15 +26,24 @@ early "38% of walls vanished" figure and the first pull-test zeros.
 After the fix, only 7% (8 of 115) of 6h-held walls near price vanished.
 
 ## Plain takeaway
-In this data, heatmap colors show WHERE orders sit, not WHERE price turns,
-either on the band or just before it. Bigger bands held worse, not better.
-Use the heatmap as a map only; give it no extra weight as confluence.
+Over HOURS within a single day, heatmap colors showed WHERE orders sit, not
+WHERE price turns, either on the band or just before it. Bigger bands held
+worse, not better. Use the heatmap as a map only; give it no extra weight
+as confluence, at least on intraday horizons.
 
-## Limits
-- Coinbase data; I watch Binance on CoinGlass.
-- Single-day samples, 6-hour outcome window.
+## Limits (what this does NOT show)
+- One day per month: each sample is a single day, so walls had to build up
+  from scratch each morning, and outcomes were capped at 6 hours.
+- Swing horizon untested: bounces taking 12-24+ hours (what matters for 6H
+  swing trading) were not measured.
+- No multi-day walls: walls sitting at a level for days were invisible.
+- Touches on the same day are not fully independent, so the effective sample
+  is smaller than ~700; the pattern was steady across 6 years, though.
+- 1st-of-month days may not be typical (monthly open).
+- Coinbase data; I watch Binance on CoinGlass. Their books can differ a lot.
 - "Big bands get pushed through" is a new, untested idea.
 
 ## Still open
-- Main test on recorder data (6h-held walls), due ~2026-11-28.
+- Main test on recorder data: continuous days, multi-day walls, 24-hour
+  bounce window. Due ~2026-11-28.
 - Trade log column: wall none / spot / perp / both, plus turn before / at / past.
